@@ -29,7 +29,6 @@ public class Nurse {
     @UpdateTimestamp
     @Column(name = "EDIT_TIME")
     private LocalDateTime editTIME;
-//    , columnDefinition = "DATETIME(6)"
 
     @ManyToMany
     @JoinTable(

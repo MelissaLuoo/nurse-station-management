@@ -201,13 +201,13 @@ onMounted(async () => {
         <div class="font-sans font-semibold">[unallocated]</div>
       </div>
 
-      <div class="w-1/2 h-40 grid grid-cols-3 text-center gap-x-1">
+      <div class="w-1/2 h-44 grid grid-cols-3 text-center gap-x-1">
         <div class="ring-2 ring-gray-800 font-sans font-semibold overflow-y-auto">
           <ul class="bg-slate-700 px-2">
             <li
               v-for="station in allocated"
               :key="station.id"
-              class="text-slate-300 text-xl py-1 cursor-pointer"
+              class="text-slate-300 text-lg py-1 cursor-pointer"
               :class="{
                 'bg-blue-600': selectedStation && selectedStation.id === station.id,
                 'hover:bg-blue-500': !(selectedStation && selectedStation.id === station.id),
@@ -243,7 +243,7 @@ onMounted(async () => {
             <li
               v-for="station in un_allocated"
               :key="station.id"
-              class="text-slate-300 text-xl py-1 cursor-pointer"
+              class="text-slate-300 text-lg py-1 cursor-pointer"
               :class="{
                 'bg-blue-600': selectedStation && selectedStation.id === station.id,
                 'hover:bg-blue-500': !(selectedStation && selectedStation.id === station.id),

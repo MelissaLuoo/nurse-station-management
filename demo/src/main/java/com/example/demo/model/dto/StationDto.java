@@ -1,6 +1,5 @@
 package com.example.demo.model.dto;
 
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 public class StationDto {

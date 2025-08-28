@@ -87,8 +87,8 @@ onMounted(async () => {
 }
 
 .table-body {
-  @apply text-slate-300 text-xl;
-  @apply text-center;
+  @apply text-slate-300 text-xl text-center;
+  @apply font-mono font-light;
 }
 
 .table-border {
